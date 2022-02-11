@@ -5086,6 +5086,7 @@ html body .innerPage .center .rightSide .smallBoard .list {
   width: 100%;
   height: 307px;
   overflow-y: auto;
+  color: #0069d5;
 }
 html body .innerPage .center .rightSide .smallBoard .list.trans {
   height: 321px;
@@ -5320,7 +5321,7 @@ html body .innerPage .center .mailWrap.innerMode .msg {
   height: auto;
   padding: 22px 12px;
   color: #5f5f5f;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
 html body .innerPage .center .mailWrap .top {
@@ -5361,7 +5362,8 @@ html body .innerPage .center .mailWrap .top div {
           box-sizing: border-box;
 }
 html body .innerPage .center .mailWrap .top div a {
-  width: 125px;
+  width: auto;
+  padding: 0 15px;
   height: 35px;
   margin-right: 10px;
   text-align: center;
@@ -5376,6 +5378,7 @@ html body .innerPage .center .mailWrap .top div a {
   border-radius: 4px;
   cursor: pointer;
   border: 1px solid #e3e3e3;
+  font-size: 15px;
 }
 html body .innerPage .center .mailWrap .top div a:hover, html body .innerPage .center .mailWrap .top div a:active, html body .innerPage .center .mailWrap .top div a.active {
   background: #0069d5;
@@ -7141,24 +7144,22 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .conten
   font-weight: bold;
   line-height: 2.5;
   margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_number .number_num1 {
   color: #0069d5;
   font-size: 16px;
-  margin-bottom: 25px;
-  width: 122px;
+  width: 145px;
   text-align: right;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_number .number_num {
   color: #666c75;
-  font-size: 14px;
+  font-size: 15px;
   padding: 0 18px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_number button {
-  font-size: 14px !important;
-  margin: 0 40px;
-  width: 155px;
-  height: 31px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #41bef2), color-stop(45%, #36b7ed), color-stop(99%, #29afe6));
   background: linear-gradient(180deg, #41bef2 0, #36b7ed 45%, #29afe6 99%);
   border-radius: 6px;
@@ -7168,6 +7169,10 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .conten
   padding: 0 10px;
   -webkit-box-shadow: 0 1px 4px #00000042;
           box-shadow: 0 1px 4px #00000042;
+  font-size: 12px !important;
+  width: 145px;
+  height: 27px;
+  margin: 0;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_number button:hover, html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_number button:active, html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_number button.active {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #41bef2), color-stop(45%, #36b7ed), color-stop(99%, #29afe6));
@@ -7177,7 +7182,6 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .conten
   width: 257px;
   height: 41px;
   font-size: 14px;
-  margin: 25px 0 0 108px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9bd722), color-stop(45%, #99d420), color-stop(99%, #8fc819));
   background: linear-gradient(180deg, #9bd722 0, #99d420 45%, #8fc819 99%);
   border-radius: 3px;
@@ -7187,6 +7191,7 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .conten
   letter-spacing: 1px;
   border-radius: 5px;
   cursor: pointer;
+  margin: 25px 0 0 108px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box button:hover, html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box button:active, html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box button.active {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ee6128), color-stop(45%, #f07422), color-stop(99%, #f07422));

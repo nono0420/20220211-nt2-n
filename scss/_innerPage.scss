@@ -1896,6 +1896,7 @@
                     width: 100%;
                     height: 307px;
                     overflow-y: auto;
+                    color: $fontColor_3;
 
                     &.trans {
                         height: 321px;
@@ -2126,7 +2127,7 @@
                     height: auto;
                     padding: 22px 12px;
                     color: $fontColor_10;
-                    font-size: 15px;
+                    font-size: 16px;
                     font-weight: bold;
                 }
             }
@@ -2160,13 +2161,15 @@
                     box-sizing: border-box;
 
                     a {
-                        width: 125px;
+                        width: auto;
+                        padding: 0 15px;
                         height: 35px;
                         margin-right: 10px;
                         text-align: center;
                         line-height: 35px;
                         text-decoration: none;
                         @include buttonStyle_6;
+                        font-size: 15px;
                     }
                 }
             }
@@ -3656,26 +3659,26 @@
                                     font-weight: bold;
                                     line-height: 2.5;
                                     margin-top: 15px;
+                                    align-items: center;
     
     
                                     .number_num1 {
                                         color: $fontColor_3;
                                         font-size: 16px;
-                                        margin-bottom: 25px;
-                                        width: 122px;
+                                        width: 145px;
                                         text-align: right;
                                     }
                                     .number_num {
                                         color: $fontColor_5;
-                                        font-size: 14px;
+                                        font-size: 15px;
                                         padding: 0 18px;
                                     }
                                     button {
-                                        font-size: 14px !important;
-                                        margin: 0 40px;
-                                        width: 155px;
-                                        height: 31px;
                                         @include buttonStyle_2;
+                                        font-size: 12px !important;
+                                        width: 145px;
+                                        height: 27px;
+                                        margin: 0;
                                     }
                                 }
     
@@ -3683,8 +3686,8 @@
                                     width: 257px;
                                     height: 41px;
                                     font-size: 14px;
-                                    margin: 25px 0 0 108px;
                                     @include buttonStyle_3;
+                                    margin: 25px 0 0 108px;
                                 }
                             }
                             .remindBox {
