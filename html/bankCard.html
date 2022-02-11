@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body onload="currentTime()">
+    <header>
+        <div class="top">
+            <span class="brad">
+                TONG BOU
+                <span class="time"></span>
+            </span>
+            <ul class="user userInfo">
+                <li class="loginPart">
+                    <form class="loginForm">
+                        <div>
+                            <i></i>
+                            <input type="text" placeholder="アカウントまたは携帯電話番号を入力して">
+                        </div>
+                        <div>
+                            <i></i>
+                            <input type="password" placeholder="パスワード">
+                            <i class="forget"></i>
+                        </div>
+                        <button class="loginBtn" type="button">登録 </button>
+                        <button class="loginPart register" onclick="window.open('./html/register.html')" type="button">ログイン</button>
+                    </form>
+                </li>
+                <li class="infoPart">
+                    <span class="lv">nt5_test01</span>
+                    <span class="useRname">userName</span>
+                </li>
+                <li class="infoPart moneyTotal">
+                    <span class="total">9999</span>
+                    <i class="money_arrow"></i>
+                </li>
+                <li class="infoPart infoBtn" onclick="window.location.href='./deposit.html'">
+                    入金 
+                </li>
+                <li class="infoPart infoBtn" onclick="window.location.href='./withdrawal.html'">
+                    出金 
+                </li>
+                <li class="infoPart infoBtn" onclick="window.location.href='./member.html'">
+                    マイページ 
+                </li>
+                <li class="infoPart infoBtn" onclick="window.location.href='./mail.html'">
+                    インボックス
+                </li>
+                <li class="infoPart logoutBtn" onclick="window.location.href='../index.html'">
+                    ログアウト 
+                </li>
+                <li class="lang">
+                    <select>
+                        <option>日本語</option>
+                        <option>简体中文</option>
+                        <option>ENGLISH</option>
+                        <option>繁體中文</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="gameNav">
+            <div class="center">
+                <img class="logo" src="../images/icon/svg/logo.svg">
+                <ul>
+                    <li class="menu" onclick="window.location.href='../index.html'"> ホーム </li>
+                    <li class="saleBtn" onclick="window.location.href='../html/event.html'"> プロモーション </li>
+                    <li class="vipBtn active" onclick="window.location.href='../html/vip.html'"> VIPメンバー </li>
+                    <li class="gameBtn" onclick="unlogin()"> ゲームスタート </li>
+                </ul>
+            </div>
+        </div>
+        <div class="topGameList">
+             <div class="listWrap">
+                 <div class="center">
+                     <i class="prev"></i>
+                     <div class="container">
+                         <ul class="sport">
+                            <li onclick="openSportGame()">
+                                <div>
+                                    <img src="../images/廠商圖/sport/36588.png">
+                                </div>
+                                <p>36588體育</p>
+                            </li>
+                        </ul>
+                         <ul class="live">
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/廠商圖/live/歐博真人.png">
+                                </div>
+                                <p>歐博</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/廠商圖/live/WM真人.png">
+                                </div>
+                                <p>WM</p>
+                            </li>
+                         </ul>
+                         <ul class="slot">
+                            <li onclick="openSlotGame()">
+                                <div>
+                                    <img src="../images/廠商圖/slot/bng.png">
+                                </div>
+                                <p>BNG娛樂</p>
+                            </li>
+                            <li onclick="openSlotGame()">
+                                <div>
+                                    <img src="../images/廠商圖/slot/pls.png">
+                                </div>
+                                <p>pls</p>
+                            </li>
+                            <li onclick="openSlotGame()">
+                                <div>
+                                    <img src="../images/廠商圖/slot/simplePlay.png">
+                                </div>
+                                <p>SimplePlay</p>
+                            </li>
+                            <li onclick="openSlotGame()">
+                                <div>
+                                    <img src="../images/廠商圖/slot/rtg.png">
+                                </div>
+                                <p>RTG</p>
+                            </li>
+                            <li onclick="openSlotGame()">
+                                <div>
+                                    <img src="../images/廠商圖/slot/ifun.png">
+                                </div>
+                                <p>IFUN</p>
+                            </li>
+                            <li onclick="openSlotGame()">
+                                <div>
+                                    <img src="../images/廠商圖/slot/bwin.png">
+                                </div>
+                                <p>必贏</p>
+                            </li>
+                            <li onclick="openSlotGame()">
+                                <div>
+                                    <img src="">
+                                </div>
+                                <p>PNG</p>
+                            </li>
+                         </ul>
+                         <ul class="lottery">
+                            <li onclick="openLotteryGame()">
+                                <div>
+                                    <img src="../images/廠商圖/lottery/sg.png">
+                                </div>
+                                <p>SG</p>
+                            </li>
+                            <li onclick="openLotteryGame()">
+                                <div>
+                                    <img src="../images/廠商圖/lottery/gs.png">
+                                </div>
+                                <p>GS</p>
+                            </li>
+                         </ul>
+                         <ul class="fish">
+                             <li onclick="openFishGame()">
+                                 <div>
+                                     <img src="../images/廠商圖/fish/fish_1.jpeg">
+                                 </div>
+                                 <p>魚樂無窮</p>
+                             </li>
+                             <li onclick="openFishGame()">
+                                 <div>
+                                     <img src="../images/廠商圖/fish/fish_2.jpeg">
+                                 </div>
+                                 <p>捕魚</p>
+                             </li>
+                             <li onclick="openFishGame()">
+                                 <div>
+                                     <img src="../images/廠商圖/fish/fish_3.jpg">
+                                 </div>
+                                 <p>霸王虞姬</p>
+                             </li>
+                             <li onclick="openFishGame()">
+                                 <div>
+                                     <img src="../images/廠商圖/fish/fish_4.jpg">
+                                 </div>
+                                 <p>龍珠捕魚</p>
+                             </li>
+                             <li onclick="openFishGame()">
+                                 <div>
+                                     <img src="../images/廠商圖/fish/fish_5.jpg">
+                                 </div>
+                                 <p>中國神魔捕魚</p>
+                             </li>
+                             <li onclick="openFishGame()">
+                                 <div>
+                                     <img src="../images/廠商圖/fish/fish_6.jpg">
+                                 </div>
+                                 <p>中國神魔塔防</p>
+                             </li>
+                             <li onclick="openFishGame()">
+                                 <div>
+                                     <img src="">
+                                 </div>
+                                 <p>海霸王之八爪天下</p>
+                             </li>
+                         </ul>
+                         <ul class="board">
+                             <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>奪寶小靈猴</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>三開德州撲克</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>多手21點</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>蟲蟲派對</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>賭場Hold' em</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>賭場桩牌撲克</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>德賽斯野生</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>雙開式21點</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>歐洲21點</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>歐洲輪盤</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>飛翔小豬</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>累積獎金撲克</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>杰克高手</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>小丑撲克</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>迷你百家樂</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>財運之輪</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>雨林魔法賓果</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>單副牌21點</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>超級旋轉</p>
+                            </li>
+                            <li onclick="openBoardGame()">
+                                <div>
+                                    <img src="../images/廠商圖/board/board_1.jpeg">
+                                </div>
+                                <p>魔力小甜心賓果</p>
+                            </li>
+                         </ul>
+                     </div>
+                     <i class="next"></i>
+                 </div>
+             </div>
+        </div>
+    </header>
+    <div class="header"></div>
+    <main>
+        <div class="innerPage">
+            <div class="marqueeArea">
+                <div class="center">
+                    <div class="marqueeWrap">
+                        <i class="marquee_ic"></i>
+                        <div class="marquee">
+                            <pre>
+                                <p>読売新聞社杯　全日本王座決定戦　開設６９周年記念</p>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <aside class="innerSide">
+                    <div class="userInfo">
+                        <div>
+                            <p class="account">
+                                bbb123
+                                <span class="lv">VIP20</span>
+                            </p>
+                            <p class="days">參加45日</p>
+                            <ul class="quickSelect">
+                                <li onclick="window.location.href='./deposit.html'">
+                                    <p class="btn">入</p>
+                                    <span>入金</span>
+                                </li>
+                                <li onclick="window.location.href='./withdrawal.html'">
+                                    <p class="btn">出</p>
+                                    <span>出金</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="innerNav">
+                        <li onclick="window.location.href='./member.html'">
+                            <i class="user_ic"></i>
+                            個人情報
+                        </li>
+                        <li onclick="window.location.href='./vip.html'">
+                            <i class="vip_ic"></i>
+                            VIPメンバー
+                        </li>
+                        <li onclick="window.location.href='./wallet.html'">
+                            <i class="wallet_ic"></i>
+                            マイウォレット
+                        </li>
+                        <li class="active" onclick="window.location.href='./bankCard.html'">
+                            <i class="card_ic"></i>
+                            銀行口座
+                        </li>
+                        <li onclick="window.location.href='./dealRecord.html'">
+                            <i class="dealRecord_ic"></i>
+                            取引履歷
+                        </li>
+                        <li onclick="window.location.href='./eventApply.html'">
+                            <i class="event_ic"></i>
+                            プロモーション申請
+                        </li>
+                        <li onclick="window.location.href='./mail.html'">
+                            <i class="mail_ic"></i>
+                            インボックス
+                        </li>
+                    </ul>
+                </aside>
+                <section>
+                    <div class="cardWrap">
+                        <div class="cardMiddle">
+                            <div class="top">
+                                <div class="header">
+                                    <span>銀行口座を連携</span>
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <span>カード管理</span>
+                                        <span>カードの数 1<span>/ 5</span></span>
+                                    </div>
+                                    <div class="cardBox">
+                                        <div class="slider">
+                                            <div class="card empty">
+                                                <div class="addCard_ic"></div>
+                                                <div class="text">請先綁定一張銀行卡，用於收款</div>
+                                            </div>
+                                            <div class="card register">
+                                                <div class="name">上海銀行</div>
+                                                <div class="branch">上海</div>
+                                                <div class="account">
+                                                    <span>0234568790</span>
+                                                </div>
+                                                <p class="review">審核中</p>
+                                            </div>
+                                            <div class="card register">
+                                                <div class="name">上海銀行</div>
+                                                <div class="branch">上海</div>
+                                                <div class="account">
+                                                    <span>0234568790</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottomWrap">
+                                <div class="bottom">
+                                    <div>
+                                        <div class="title"> 銀行口座追加</div>
+                                        <div class="formBox">
+                                            <form>
+                                                <div class="content">
+                                                    <div class="row">
+                                                        <div class="smallTitle">
+                                                            <span>出金方法</span>
+                                                        </div>
+                                                        <select>
+                                                            <option>選んでください</option>
+                                                            <option> 銀行口座 </option>
+                                                            <option> USDT </option>
+                                                            <option> VenusPoint </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="smallTitle">
+                                                            <span>銀行名</span>
+                                                        </div>
+                                                        <div class="inputBox">
+                                                            <input type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="smallTitle">
+                                                            <span>支店名</span>
+                                                        </div>
+                                                        <div class="inputBox">
+                                                            <small _ngcontent-qyg-c69="" class="bottomm52">関連する単語を入力して、銀行名を選んでください;<br _ngcontent-qyg-c69=""> メニューをクリックして銀行名情報を入力し、情報が正しいことを確認してください。</small>
+                                                            <input type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="smallTitle">
+                                                            <span>口座名義(カタカナ)</span>
+                                                        </div>
+                                                        <div class="inputBox">
+                                                            <input type="text" value="美術一" readonly>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="smallTitle">
+                                                            <span>銀行口座番号</span>
+                                                        </div>
+                                                        <div class="inputBox">
+                                                            <input type="text">
+                                                            <p class="err">帳號為必填</p>
+                                                            <small>入金と出金の銀行口座は同じでなければなりません。</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="smallTitle">
+                                                            <span>口座番号を確認する</span>
+                                                        </div>
+                                                        <div class="inputBox">
+                                                            <input type="text">
+                                                            <small>入金と出金の銀行口座は同じでなければなりません。</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="smallTitle"></div>
+                                                        <div class="inputBox">
+                                                            <button>確認</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="rightSide">
+                            <div class="smallBoard">
+                                <div class="title">
+                                プロモーション
+                                    <p class="more">
+                                    もっと
+                                        <i class="arrow"></i>
+                                    </p>
+                                </div>
+                                <ul class="list">
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <nav class="sideBar">
+        <p class="download" onclick="window.location.href='./html/help.html'">
+            <i></i>
+            携帯ダウンロード
+        </p>
+        <ul class="rightSide">
+            <li class="callCenter" onclick="window.location.href='./html/help.html'"><i></i></li>
+            <li class="line" onclick="window.location.href='./html/help.html'"><i></i></li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="footerList">
+            <div class="center">
+                <ul>
+                    <li class="title openNews">最新のお知らせ </li>
+                    <li class="title" onclick="window.location.href='../html/event.html'">ボーナス</li>
+                    <li class="title" onclick="window.location.href='../html/vip.html'">VIP</li>
+                    <li class="title" onclick="window.location.href='../html/help.html'">ヘルプ​センター</li>
+                    <li class="title" onclick="window.location.href='../html/help.html'">当社について</li>
+                    <li class="pright">2021 nt5-web.local 無断転載禁止 │ 18+</li>
+                </ul>
+            </div>
+            <div class="footer-site"><div class="center-wrap"><pre>アフィリエイトは業界でも人気のアフィリエイトプログラムを提供しています。
+                アフィリエイター様と「相互メリット」を原則として、より良いパートナーシップの構築と維持に尽力致します。ぜひ、一緒に を成長させてともに利益を分け合いましょう。</pre></div>
+            </div>
+        </div>
+    </footer>
+    <div class="filter display">
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>最新公告</p>
+                <i class="close_ic"></i>
+            </div>
+            <ul class="nav">
+                <li class="hot active">熱門</li>
+                <li class="normal">一般</li>
+                <li class="deposit">存款</li>
+            </ul>
+            <ul class="content forHot display">
+                <li>
+                    <div>
+                        <p class="text">公告測試</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">公告測試</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">公告測試</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forNormal">
+                <li>
+                    <div>
+                        <p class="text">公告測試</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">公告測試</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forDeposit">
+                <li>
+                    <div>
+                        <p class="text">公告測試</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="jumpWindow loginWIndow display">
+            <div class="title">
+                <p> ヒント </p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <p>銀行口座を使用する前に、銀行カード情報を入カしてください</p>
+                <button class="close" type="button">同意する</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
