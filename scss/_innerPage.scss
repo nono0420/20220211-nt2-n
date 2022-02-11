@@ -15,6 +15,7 @@
             align-items: center;
             position: absolute;
             background: $backgroundColor_1;
+            padding: 0 10px;
 
             .marqueeWrap {
                 width: 1200px;
@@ -506,23 +507,6 @@
                                                     background: #eef2f5;
                                                 }
 
-                                                .remind {
-                                                    font-size: 12px;
-                                                    padding-left: 110px;
-                                                    color: $fontColor_9;
-                                                    font-weight: bold;
-                                                    margin-top: 6px;
-                                                    line-height: 1.5;
-
-                                                    &.np {
-                                                        padding: 0;
-
-                                                        span {
-                                                            color: $fontColor_14;
-                                                        }
-                                                    }
-                                                }
-
                                                 button {
                                                     width: 73px;
                                                     height: 32px;
@@ -585,6 +569,28 @@
                                     width: 200px;
                                     height: 41px;
                                     color: $fontColor_4;
+                                }
+                            }
+                        }
+
+                        .remind {
+                            font-size: 14px;
+                            padding-left: 110px;
+                            color: $fontColor_9;
+                            font-weight: bold;
+                            margin-top: 6px;
+                            line-height: 1.5;
+
+                            &.np {
+                                padding: 0;
+
+                                button {
+                                    color: $fontColor_3;
+                                    background: none;
+
+                                    &:hover,&.active,&.active {
+                                        color: $fontColor_14;
+                                    }
                                 }
                             }
                         }

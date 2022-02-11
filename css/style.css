@@ -1362,6 +1362,7 @@ html body main .main-bg .marqueeArea .center {
           align-items: center;
   position: absolute;
   background: #ffffff;
+  padding: 0 10px;
 }
 html body main .main-bg .marqueeArea .center .marqueeWrap {
   width: 1200px;
@@ -3068,6 +3069,7 @@ html body .innerPage .marqueeArea .center {
           align-items: center;
   position: absolute;
   background: #ffffff;
+  padding: 0 10px;
 }
 html body .innerPage .marqueeArea .center .marqueeWrap {
   width: 1200px;
@@ -3545,20 +3547,6 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   border-radius: 5px;
   background: #eef2f5;
 }
-html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind {
-  font-size: 12px;
-  padding-left: 110px;
-  color: #f3821f;
-  font-weight: bold;
-  margin-top: 6px;
-  line-height: 1.5;
-}
-html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind.np {
-  padding: 0;
-}
-html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li .remind.np span {
-  color: #55aaff;
-}
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button {
   width: 73px;
   height: 32px;
@@ -3646,6 +3634,24 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   width: 200px;
   height: 41px;
   color: #555555;
+}
+html body .innerPage .center .memberWrap .bottom .dataWrap .content .remind {
+  font-size: 14px;
+  padding-left: 110px;
+  color: #f3821f;
+  font-weight: bold;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+html body .innerPage .center .memberWrap .bottom .dataWrap .content .remind.np {
+  padding: 0;
+}
+html body .innerPage .center .memberWrap .bottom .dataWrap .content .remind.np button {
+  color: #0069d5;
+  background: none;
+}
+html body .innerPage .center .memberWrap .bottom .dataWrap .content .remind.np button:hover, html body .innerPage .center .memberWrap .bottom .dataWrap .content .remind.np button.active, html body .innerPage .center .memberWrap .bottom .dataWrap .content .remind.np button.active {
+  color: #003f97;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword {
   padding: 20px 24px;
@@ -8220,7 +8226,7 @@ html body .helpPage .center .helpWrap div p {
   line-height: 24px;
 }
 html body .helpPage .center .helpWrap div a {
-  color: #55aaff;
+  color: #003f97;
   text-decoration: none;
 }
 html body .helpPage .center .helpWrap div .teachList {
