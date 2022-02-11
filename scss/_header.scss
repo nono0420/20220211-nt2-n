@@ -98,9 +98,19 @@ header {
                         }
 
                         input {
-                            width: 152px;
+                            width: 288px;
                             height: 30px;
-                            margin: 0 4px;
+                            margin: 0 6px;
+                            padding: 0 10px;
+                            font-size: 14px !important;
+                            @include inputStyle_1;
+                        }
+
+                        .password_0 {
+                            width: 155px;
+                            height: 30px;
+                            margin: 0 6px;
+                            padding: 0 10px;
                             @include inputStyle_1;
                         }
                     }

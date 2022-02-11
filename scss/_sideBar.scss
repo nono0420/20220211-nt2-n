@@ -2,7 +2,7 @@
 
     .download {
         position: fixed;
-        left: 10px;
+        left: 5px;
         top: 240px;
         width: 24px;
         height: 163px;
@@ -10,7 +10,7 @@
         padding: 28px 10px 0 12px;
         color: $backgroundColor_1;
         writing-mode: vertical-lr;
-        background: $backgroundColor_2;
+        background: $backgroundColor_4;
         outline: none;
 
         &::before {
@@ -20,7 +20,7 @@
             height: 0;
             left: 50%;
             transform: translateX(-50%);
-            border-color: $backgroundColor_2 transparent;
+            border-color: $backgroundColor_4 transparent;
             border-style: solid;
             bottom: -20px;
             border-width: 20px 23px 0;
@@ -33,7 +33,7 @@
             height: 0;
             left: 50%;
             transform: translateX(-50%);
-            border-color: $backgroundColor_2 transparent;
+            border-color: $backgroundColor_4 transparent;
             border-style: solid;
             top: -20px;
             border-width: 0 23px 20px;

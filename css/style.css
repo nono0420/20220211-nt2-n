@@ -966,9 +966,11 @@ html body header .top .user li:not(.platform) .loginForm div i.forget {
   color: #f3821f;
 }
 html body header .top .user li:not(.platform) .loginForm div input {
-  width: 152px;
+  width: 288px;
   height: 30px;
-  margin: 0 4px;
+  margin: 0 6px;
+  padding: 0 10px;
+  font-size: 14px !important;
   border: solid 1px #b3b3b3;
   background: #ffffff;
   border-radius: 6px;
@@ -976,6 +978,20 @@ html body header .top .user li:not(.platform) .loginForm div input {
   font-weight: bold;
 }
 html body header .top .user li:not(.platform) .loginForm div input::-webkit-input-placeholder {
+  color: #b3cae3;
+}
+html body header .top .user li:not(.platform) .loginForm div .password_0 {
+  width: 155px;
+  height: 30px;
+  margin: 0 6px;
+  padding: 0 10px;
+  border: solid 1px #b3b3b3;
+  background: #ffffff;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+html body header .top .user li:not(.platform) .loginForm div .password_0::-webkit-input-placeholder {
   color: #b3cae3;
 }
 html body header .top .user li:not(.platform) .loginForm button {
@@ -1676,7 +1692,7 @@ html body main .main-bg .right-side .home .center-wrap .remindbox div p .gold {
 }
 html body .sideBar .download {
   position: fixed;
-  left: 10px;
+  left: 5px;
   top: 240px;
   width: 24px;
   height: 163px;
@@ -1686,7 +1702,7 @@ html body .sideBar .download {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  background: #0069d5;
+  background: #003f97;
   outline: none;
 }
 html body .sideBar .download::before {
@@ -1697,7 +1713,7 @@ html body .sideBar .download::before {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  border-color: #0069d5 transparent;
+  border-color: #003f97 transparent;
   border-style: solid;
   bottom: -20px;
   border-width: 20px 23px 0;
@@ -1710,7 +1726,7 @@ html body .sideBar .download::after {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  border-color: #0069d5 transparent;
+  border-color: #003f97 transparent;
   border-style: solid;
   top: -20px;
   border-width: 0 23px 20px;
@@ -3436,13 +3452,13 @@ html body .innerPage .center .memberWrap .top .content .level li {
   font-weight: bold;
 }
 html body .innerPage .center .memberWrap .top .content .level li.active i {
-  background-color: #00000087;
+  background-color: #a6e526;
 }
 html body .innerPage .center .memberWrap .top .content .level li i {
   display: block;
   width: 31px;
   height: 31px;
-  background-color: #a6e526;
+  background-color: #00000087;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -3583,7 +3599,7 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right ul li p {
   font-size: 14px;
-  color: #0069d5;
+  color: #666c75;
   font-weight: bold;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.right ul li .copy {
@@ -4770,6 +4786,16 @@ html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox {
   margin-top: 5px;
   overflow-x: auto;
 }
+html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox::-webkit-scrollbar {
+  height: 7px;
+}
+html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox::-webkit-scrollbar-thumb {
+  background: #3789de;
+  border-radius: 30px;
+}
 html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slider {
   padding-top: 10px;
   display: -webkit-box;
@@ -4792,6 +4818,8 @@ html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slide
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 15px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 html body .innerPage .center .cardWrap .cardMiddle .top .content .cardBox .slider .card:last-child {
   margin: 0;
@@ -5183,6 +5211,7 @@ html body .innerPage .center .rightSide .smallBoard ul {
   height: 250px;
   margin-top: 15px;
   font-weight: bold;
+  padding: 0 8px;
 }
 html body .innerPage .center .rightSide .smallBoard ul li {
   width: 100%;
@@ -5190,21 +5219,30 @@ html body .innerPage .center .rightSide .smallBoard ul li {
   color: #0069d5;
   height: 30px;
   font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 html body .innerPage .center .rightSide .smallBoard ul li .scss_in {
-  display: inline;
+  width: 82px;
+  display: inline-block;
   color: #f3821f;
   margin-left: 20px;
+  text-align: right;
 }
 html body .innerPage .center .rightSide .smallBoard ul li .scss {
+  width: 82px;
   display: inline;
   color: #a6e526;
   margin-left: 20px;
+  text-align: right;
 }
 html body .innerPage .center .rightSide .smallBoard ul li .not_scss {
+  width: 82px;
   display: inline;
   color: #666c75;
   margin-left: 20px;
+  text-align: right;
 }
 html body .innerPage .center .rightSide .smallBoard ul ._list_Tx {
   color: #0069d5;
@@ -7080,20 +7118,19 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .conten
   height: auto;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box span {
-  color: #a6e526;
-  padding-bottom: 10px;
+  color: #f3821f;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_name {
   color: #0069d5;
-  font-size: 14px;
-  margin-top: 20px;
+  font-size: 16px;
+  margin: 25px 0 0 92px;
   font-weight: bold;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_name2 {
   color: #666c75;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  margin: -14px 0 0 100px;
+  margin: -14px 0 0 138px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_number {
   width: 100%;
@@ -7107,8 +7144,10 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .conten
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_number .number_num1 {
   color: #0069d5;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 25px;
+  width: 122px;
+  text-align: right;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .content .confin_box .confin_number .number_num {
   color: #666c75;
@@ -7138,6 +7177,7 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom.confirm .conten
   width: 257px;
   height: 41px;
   font-size: 14px;
+  margin: 25px 0 0 108px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9bd722), color-stop(45%, #99d420), color-stop(99%, #8fc819));
   background: linear-gradient(180deg, #9bd722 0, #99d420 45%, #8fc819 99%);
   border-radius: 3px;
