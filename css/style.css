@@ -2447,6 +2447,7 @@ html body .filter .jumpWindow.passwordWindow form .content input {
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
 }
 html body .filter .jumpWindow.passwordWindow form .btnBox {
   padding-bottom: 37px;
@@ -2503,6 +2504,7 @@ html body .filter .jumpWindow.changeBTNWindow form .content input {
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
 }
 html body .filter .jumpWindow.changeBTNWindow form .btnBox {
   padding-bottom: 43px;
@@ -2704,6 +2706,7 @@ html body .filter .jumpWindow.betWindow form .row input {
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
 }
 html body .filter .jumpWindow.betWindow form .row .trans_arrow {
   display: block;
@@ -3546,6 +3549,7 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable l
   border: 1px solid #b3b3b3;
   border-radius: 5px;
   background: #eef2f5;
+  padding: 0 10px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .content .fakeTable li.left form ul li button {
   width: 73px;
@@ -3688,6 +3692,7 @@ html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
 }
 html body .innerPage .center .memberWrap .bottom .dataWrap .changePassword ul li button {
   width: 70px;
@@ -4996,6 +5001,7 @@ html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .form
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
   margin-bottom: 9px;
 }
 html body .innerPage .center .cardWrap .cardMiddle .bottomWrap .bottom div .formBox form .content .row .inputBox .err {
@@ -6178,6 +6184,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .s
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .search form .dateBtnBox {
   display: -webkit-box;
@@ -6443,6 +6450,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap1 .search for
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap1 .search form .btnBox {
   width: auto;
@@ -6773,6 +6781,7 @@ html body .innerPage .center .betWrap form .timeGroup .timeBox input {
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
 }
 html body .innerPage .center .betWrap form .timeGroup .timeBox .btnBox button {
   width: 72px;
@@ -7290,6 +7299,7 @@ html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
 }
 html body .innerPage .center .depositWrap .depositMiddle .bottom .content form .row .remind-1 {
   position: absolute;
@@ -8021,6 +8031,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row
   background: #eef2f5;
   color: #5f5f5f;
   font-weight: bold;
+  padding: 0 10px;
 }
 html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom form .row div .remind {
   margin: 8px 0 0 26px;
