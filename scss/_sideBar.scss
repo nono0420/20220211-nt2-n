@@ -12,6 +12,7 @@
         writing-mode: vertical-lr;
         background: $backgroundColor_4;
         outline: none;
+        cursor: pointer;
 
         &::before {
             content: "";

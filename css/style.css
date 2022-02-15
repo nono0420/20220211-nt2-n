@@ -1707,6 +1707,7 @@ html body .sideBar .download {
           writing-mode: vertical-lr;
   background: #003f97;
   outline: none;
+  cursor: pointer;
 }
 html body .sideBar .download::before {
   content: "";
