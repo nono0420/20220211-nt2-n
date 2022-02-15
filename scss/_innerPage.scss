@@ -2022,37 +2022,28 @@
                     margin-top: 15px;
                     font-weight: bold;
                     padding: 0 8px;
+                    box-sizing: border-box;
                     
                     li {
                         width: 100%;
                         white-space:nowrap;
                         color: $fontColor_3;
                         height: 30px;
-                        font-size: 14px;
+                        font-size: 13px;
                         display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        justify-content: space-between;
 
-                        .scss_in {
-                            width: 82px;
-                            display: inline-block;
-                            color: $fontColor_9;
-                            margin-left: 20px;
-                            // position: absolute;
-                            text-align: right;
-                        }
-                        .scss {
-                            width: 82px;
-                            display: inline;
-                            color: $fontColor_8;
-                            margin-left: 20px;
-                            text-align: right;
-                        }
-                        .not_scss {
-                            width: 82px;
-                            display: inline;
-                            color: $fontColor_5;
-                            margin-left: 20px;
-                            text-align: right;
-                        }
+                       .in {
+                        color: $fontColor_8;
+                       }
+                       .yes {
+                           color: $fontColor_9;
+                       }
+                       .not {
+                           color: $fontColor_5;
+                       }
                     }
 
                     ._list_Tx {
@@ -2221,7 +2212,7 @@
                         width: 100%;
                         height: auto;
                         padding-bottom: 16px;
-                        border-bottom: solid 1px $borderColor_2;
+                        border-bottom: solid 1px $borderColor_1;
 
                         &.nor {
                             justify-content: flex-end;
@@ -2841,7 +2832,7 @@
                             width: 100%;
                             height: auto;
                             box-sizing: border-box;
-                            padding: 22px;
+                            padding: 22px 17px;
 
                             .tableTitle {
                                 font-size: 17px;
@@ -2955,16 +2946,15 @@
                     }
 
                     .reviewWrap1 {
-                        width: 96%;
+                        width: 100%;
                         height: auto;
-                        padding: 0px 23px;
 
                         .search {
                             width: 100%;
                             height: auto;
                             box-sizing: border-box;
                             padding: 24px 18px 24px 24px;
-                            border-bottom: solid 1px $borderColor_3;
+                            border-bottom: solid 1px $borderColor_1;
 
                             form {
                                 width: 100%;
@@ -4334,7 +4324,7 @@
                             flex-direction: column;
                             align-items: center;
                             justify-content: space-evenly;
-                            width: 222px;
+                            width: 200px;
                             height: 112px;
                             margin-right: 8px;
                             border: solid 1px $borderColor_2;

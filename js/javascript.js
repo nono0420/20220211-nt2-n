@@ -304,6 +304,7 @@ $(function(){
     $('.eventWrap .tabs li:nth-of-type(3)').click(function(){
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
+        $('.eventMiddle .eventBox').removeClass('display');
         $('.eventMiddle .eventBox2').removeClass('display');
         $('.eventMiddle .eventRecord').addClass('display');
     })

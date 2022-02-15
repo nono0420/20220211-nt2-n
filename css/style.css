@@ -5235,37 +5235,35 @@ html body .innerPage .center .rightSide .smallBoard ul {
   margin-top: 15px;
   font-weight: bold;
   padding: 0 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html body .innerPage .center .rightSide .smallBoard ul li {
   width: 100%;
   white-space: nowrap;
   color: #0069d5;
   height: 30px;
-  font-size: 14px;
+  font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-html body .innerPage .center .rightSide .smallBoard ul li .scss_in {
-  width: 82px;
-  display: inline-block;
-  color: #f3821f;
-  margin-left: 20px;
-  text-align: right;
-}
-html body .innerPage .center .rightSide .smallBoard ul li .scss {
-  width: 82px;
-  display: inline;
+html body .innerPage .center .rightSide .smallBoard ul li .in {
   color: #a6e526;
-  margin-left: 20px;
-  text-align: right;
 }
-html body .innerPage .center .rightSide .smallBoard ul li .not_scss {
-  width: 82px;
-  display: inline;
+html body .innerPage .center .rightSide .smallBoard ul li .yes {
+  color: #f3821f;
+}
+html body .innerPage .center .rightSide .smallBoard ul li .not {
   color: #666c75;
-  margin-left: 20px;
-  text-align: right;
 }
 html body .innerPage .center .rightSide .smallBoard ul ._list_Tx {
   color: #0069d5;
@@ -5457,7 +5455,7 @@ html body .innerPage .center .mailWrap .bottom .list .btnBox {
   width: 100%;
   height: auto;
   padding-bottom: 16px;
-  border-bottom: solid 1px #d5d6d7;
+  border-bottom: solid 1px #0069d5;
 }
 html body .innerPage .center .mailWrap .bottom .list .btnBox.nor {
   -webkit-box-pack: end;
@@ -6251,7 +6249,7 @@ html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .t
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 22px;
+  padding: 22px 17px;
 }
 html body .innerPage .center .eventWrap .eventMiddle .eventRecord .recordWrap .tableWrap .tableTitle {
   font-size: 17px;
@@ -6371,9 +6369,8 @@ html body .innerPage .center .dealWrap .bottom .dealBox.display {
   display: block;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap1 {
-  width: 96%;
+  width: 100%;
   height: auto;
-  padding: 0px 23px;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap1 .search {
   width: 100%;
@@ -6381,7 +6378,7 @@ html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap1 .search {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 24px 18px 24px 24px;
-  border-bottom: solid 1px #62a5eb;
+  border-bottom: solid 1px #0069d5;
 }
 html body .innerPage .center .dealWrap .bottom .dealBox .reviewWrap1 .search form {
   width: 100%;
@@ -7967,7 +7964,7 @@ html body .innerPage .center .withdrawalWrap .withdrawalMiddle .bottom ul li {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 222px;
+  width: 200px;
   height: 112px;
   margin-right: 8px;
   border: solid 1px #d5d6d7;
@@ -8325,7 +8322,25 @@ html body .helpPage .center .helpWrap div .img.online04 {
 html body .helpPage .center .helpWrap div .img.online05 {
   width: 275px;
   height: 379px;
-  margin: 10px 0 20px 55px;
+  margin: 10px 0 20px 0;
+}
+html body .helpPage .center .helpWrap div button {
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9bd722), color-stop(45%, #99d420), color-stop(99%, #8fc819));
+  background: linear-gradient(180deg, #9bd722 0, #99d420 45%, #8fc819 99%);
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 11px 45px;
+}
+html body .helpPage .center .helpWrap div button:hover, html body .helpPage .center .helpWrap div button:active, html body .helpPage .center .helpWrap div button.active {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ee6128), color-stop(45%, #f07422), color-stop(99%, #f07422));
+  background: linear-gradient(180deg, #ee6128 0, #f07422 45%, #f07422 99%);
 }
 html body .registerWrap {
   width: 100%;
