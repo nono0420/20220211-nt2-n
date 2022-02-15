@@ -1669,6 +1669,7 @@
                                             color: $fontColor_5;
                                             font-weight: bold;
                                             margin-top: 25px;
+                                            padding: 0 10px;
                                         }
                                     }
 
@@ -2771,7 +2772,7 @@
 
                                             .smallTitle {
                                                 font-size: 14px;
-                                                width: auto;
+                                                width: 100%;
                                                 max-width: 48px;
                                                 margin-right: 25px;
                                                 letter-spacing: 1px;
