@@ -32,9 +32,9 @@ main {
 }
 
 //首頁左邊arrow
-// main button  {
-//     background: url("../images/icon/svg/arrow_w.svg") no-repeat;
-// }
+.slick-prev::before,.slick-next::before  {
+    background: url("../images/icon/svg/arrow_w.svg") no-repeat;
+}
 
 //首頁右邊arrow
 .timelist button {

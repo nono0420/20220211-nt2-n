@@ -71,6 +71,10 @@ main {
   background-attachment: fixed;
 }
 
+.slick-prev::before, .slick-next::before {
+  background: url("../images/icon/svg/arrow_w.svg") no-repeat;
+}
+
 .timelist button {
   background: url("../images/icon/svg/arrow_w.svg") no-repeat;
 }
@@ -1480,12 +1484,6 @@ html body main .main-bg .left-side .ad .single-item button {
 html body main .main-bg .left-side .ad .single-item button:hover::after, html body main .main-bg .left-side .ad .single-item button:active::after, html body main .main-bg .left-side .ad .single-item button.active::after {
   opacity: 1;
 }
-html body main .main-bg .left-side .ad .single-item button .slick-prew, html body main .main-bg .left-side .ad .single-item button .slick-next {
-  top: 5px;
-  width: 13vw;
-  height: 13vw;
-  z-index: 1;
-}
 html body main .main-bg .left-side .ad .single-item button::after {
   content: "";
   position: absolute;
@@ -1497,13 +1495,32 @@ html body main .main-bg .left-side .ad .single-item button::after {
   height: 27px;
   opacity: 0.5;
 }
-html body main .main-bg .left-side .ad .single-item button.slick-prev {
-  left: 0px;
+html body main .main-bg .left-side .ad .single-item .slick-prev, html body main .main-bg .left-side .ad .single-item .slick-next {
+  top: unset;
+  bottom: -63px;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  width: 63px;
+  height: 63px;
+  z-index: 1;
 }
-html body main .main-bg .left-side .ad .single-item button.slick-next {
-  right: 0px;
+html body main .main-bg .left-side .ad .single-item .slick-prev::before, html body main .main-bg .left-side .ad .single-item .slick-next::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 34px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-html body main .main-bg .left-side .ad .single-item button.slick-next::after {
+html body main .main-bg .left-side .ad .single-item .slick-prev {
+  left: 15px;
+}
+html body main .main-bg .left-side .ad .single-item .slick-next {
+  right: 15px;
+}
+html body main .main-bg .left-side .ad .single-item .slick-next::before {
   -webkit-transform: translate(-50%, -50%) scaleX(-1);
           transform: translate(-50%, -50%) scaleX(-1);
 }

@@ -127,25 +127,6 @@ main {
                            
                         }
             
-                        // &::before {
-                        //     content: "";
-                        //     position: absolute;
-                        //     width: 100%;
-                        //     height: 100%;
-                        //     left: 0px;
-                        //     top: 0px;
-                           
-                        // }
-
-                        .slick-prew,.slick-next {
-                            top: 5px;
-                            width: 13vw;
-                            height: 13vw;
-                            z-index: 1;
-
-                            
-                        }
-            
                         &::after {
                             content: "";
                             position: absolute;
@@ -156,17 +137,36 @@ main {
                             height: 27px;
                             opacity: .5;
                         }
-            
-                        &.slick-prev {
-                            left: 0px;
+                    }
+
+                    .slick-prev,.slick-next {
+                        top: unset;
+                        bottom: -63px;
+                        transform: translate(0);
+                        width: 63px;
+                        height: 63px;
+                        z-index: 1;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 20px;
+                            height: 34px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
                         }
-            
-                        &.slick-next {
-                            right: 0px;
-                            
-                            &::after {
-                                transform: translate(-50%,-50%) scaleX(-1);
-                            }
+                    }
+
+                    .slick-prev {
+                        left: 15px;
+                    }
+
+                    .slick-next {
+                        right: 15px;
+
+                        &::before {
+                            transform: translate(-50%,-50%) scaleX(-1);
                         }
                     }
                 }
